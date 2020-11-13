@@ -16,6 +16,6 @@ io.sockets.on('connection', (socket) => {
     })
 });
 
-server.listen(3000, ()=>{
-    console.log('Sever Dang Chay Port ' + 3000)
+server.listen(900, ()=>{
+    console.log('Sever Dang Chay Port ' + 900)
 });
