@@ -10,10 +10,9 @@ io.sockets.on('connection', (socket) => {
         socket.Phong = dang_ky.TenPhong
     })
 
-    socket.on('CLIENT_GUI_TIN_NHAN', (data)=>{        
-        socket.broadcast.to(socket.Phong).emit('SERVER_GUI_TIN_NHAN', {
-            TinNhan: data
-        })
+    socket.on('CLIENT_GUI_TIN_NHAN', (data)=>{ 
+        console.log(data)       
+        socket.broadcast.to(socket.Phong).emit('SERVER_GUI_TIN_NHAN', data)
     })
 });
 
